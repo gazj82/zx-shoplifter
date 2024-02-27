@@ -1,4 +1,4 @@
 #!/bin/bash
 
-bas2tap -a -c main.bas main.tap
-fuse main.tap
+bas2tap -a main.bas main.tap
+fuse --graphics-filter=4x main.tap
