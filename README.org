@@ -1,0 +1,17 @@
+* Manbiki Shonen (AKA Shoplifting boy)
+
+Way back in 1979 in Japan, Hiroshi Suzuki programmed a game for the Commodore PET that many consider the first-ever Stealth game: Manbiki Shounen aka Shoplifting Boy. Predating Castle Wolfenstein, it's a game in which a young shoplifter attempts to clear a supermarket of all items on the shelves without being caught. 
+
+Pretty much unknown outside of Japan the game was bought too a wider audience by the YouTube channels [[https://www.youtube.com/watch?v=qrOiXcoABVg&t=0s][Stealth Docs]] and [[https://www.youtube.com/watch?v=reuCZf2Yhfk][8-Bit show and tell]].
+
+It was Robin's 8-Bit show and tell [[https://www.youtube.com/watch?v=reuCZf2Yhfk][episode]] that bought this game to my attention.  It looked like such a fun game, that I thought that I would try to convert the game line by line to Sinclair ZX spectrum basic.
+
+** Code
+The zx spectrum code is a line by line conversion into ZX Spectrum basic as well as I could convert it.  The original CBM PET code is provided for reference.  Some elements of the game had to be changed.  This is due to the Spectrum only having 32 columns of text compared to the 40 of the CBM PET.
+
+Also all the PETSCII graphics used in the game had to be defined as UDG's in the Spectrum's memory.
+
+** Downloading and playing
+Download the main.tap file and load it up in your favourite ZX Spectrum emulator to play the game.
+
+/Please note at this time, the game is very unfinished!/
