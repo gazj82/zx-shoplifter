@@ -7,11 +7,31 @@ Pretty much unknown outside of Japan the game was bought too a wider audience by
 It was Robin's 8-Bit show and tell [[https://www.youtube.com/watch?v=reuCZf2Yhfk][episode]] that bought this game to my attention.  It looked like such a fun game, that I thought that I would try to convert the game line by line to Sinclair ZX spectrum basic.
 
 ** Code
-The zx spectrum code is a line by line conversion into ZX Spectrum basic as well as I could convert it.  The original CBM PET code is provided for reference.  Some elements of the game had to be changed.  This is due to the Spectrum only having 32 columns of text compared to the 40 of the CBM PET.
+The zx spectrum code is a line by line conversion into ZX Spectrum basic as well as I could convert it.  The original CBM PET code is provided for reference.  Some elements of the game had to be changed.  This is due to the Spectrum only having 32 columns of text compared to the 40 of the CBM PET, but it still plays just like the original game.
 
-Also all the PETSCII graphics used in the game had to be defined as UDG's in the Spectrum's memory.
+The PETSCII graphics used in the game had to be defined as UDG's in the Spectrum's memory.
 
+The games timing has to be altered quite a lot from the C64 version as the Spectrum does not have a time variable =TI$=.
+
+The [[https://github.com/speccyorg/bas2tap][bas2tap]] program used to convert the bas file to a tap file.  This utility was create by Martijn van der Heide.
+
+** Controls
+- S - Start game
+- P - Up
+- L - Down
+- Z - Left
+- X - Right
+- SPC - Steal item
+  
 ** Downloading and playing
 Download the main.tap file and load it up in your favourite ZX Spectrum emulator to play the game.
 
-/Please note at this time, the game is very unfinished!/
+** Files
+- =shoplifter-original.bas= - Original version of shoplifter, each line has been translated as close as possible to the original CBM PET version
+- =shoplifter-original.tap= - Virtual Tape file of shoplifter-original.bas for use on spectrum emulator or real ZX spectrum
+- =shoplifter-enhanced.bas= - ZX Spectrum enhanced version of shoplifter, CBM PET version enhanced with colour.
+- =shoplifter-enhanced.tap= - Virtual Tape file of shoplifter-enhanced.bas for use on spectrum emulator or real ZX spectrum
+- =shoplifter-pet.bas= - Almost the original PET version, had some tweaks from Robin at [[https://www.8bitshowandtell.com/][8-Bit show and tell]] to allow less flickering and the controls changed to the cursor keys.  This is the basis for the Spectrum version.
+- =compile-original.sh= - Bash script to convert the bas file to a tape file and run it in the [[https://fuse-emulator.sourceforge.net/][FUSE]] emulator.
+- =compile-enhanced.sh= - Bash script to convert the bas file to a tape file and run it in the [[https://fuse-emulator.sourceforge.net/][FUSE]] emulator.
+- =README.org= - This readme file.
